@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.art-container {
+    display: flex;
+    flex-wrap: wrap; /*wrapping is basically what allows the object to wrap onto the next line*/
+    justify-content: space-around; /*space between the items*/
+    align-items: center; /*aligning the items in the center*/
+    width: 30%; /* i took only 30% of the available width to make it look more centered*/
+    margin-bottom: 50px;
+}
+
+.circle, .triangle, .square {
+    width: 25%; 
+    height: 95px; /* height of the shapes*/
+    margin: 5px; /*space between the shapes*/
+}
+
+.circle {
+    background-color: #e61603;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f6d326;
+}
+
+.square {
+    background-color: #0a42da;
+}
